@@ -21,7 +21,7 @@ $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Window
                             -ErrorAction:SilentlyContinue `
            | Where-Object {$_.DisplayName -like "$packageSearch*" `
                            -and `
-                           $_.DisplayVersion -ge 2.19 `
+                           $_.DisplayVersion -ge 2.39 `
                            -and `
                            $_.DisplayVersion -lt 3.0 } `
            | ForEach-Object {$_.InstallLocation}
